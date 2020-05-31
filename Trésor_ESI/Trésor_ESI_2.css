@@ -1,0 +1,385 @@
+div#YearSelect{
+	position: absolute;
+	top: 125%;
+	left: 10%;
+	margin: 0;
+	padding: 0;
+	cursor: default;
+}
+h3#CyclePrep{
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	text-align: center;
+	font-family: Agency FB;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25pt;
+	letter-spacing: 2px;
+	color: white;
+}
+h3#CycleSup{
+	position: absolute;
+	top: 80px;
+	left: 30px;
+	text-align: center;
+	font-family: Agency FB;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25pt;
+	letter-spacing: 2px;
+	color: white;
+}
+div.Year{
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 290px;
+	margin: 0;
+	padding: 0;
+}
+div#CP{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+img#CP_Table{
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 300px;
+}
+div#Year1{
+	width: 40px;
+	cursor: pointer;
+}
+h4#Year1_text{
+	position: absolute;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	width: 40px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: transparent;
+	color: white;
+}
+p#Year1_bg{
+	width: 40px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: #eddf0c;
+	color: #eddf0c;
+}
+h4#Year1_text_click{
+	display: none;
+	position: absolute;
+	top: 0;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	width: 160px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: #02a5dc;
+	color: white;
+}
+div#Year2{
+	position: absolute;
+	top: 58px;
+	left: 5px;
+	width: 40px;
+	cursor: pointer;
+}
+h4#Year2_text{
+	position: absolute;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	width: 40px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: transparent;
+	color: white;
+}
+p#Year2_bg{
+	width: 40px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: #f1e748;
+	color: #f1e748;
+}
+h4#Year2_text_click{
+	display: none;
+	position: absolute;
+	top: 0;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	width: 160px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: #41bbe4;
+	color: white;
+}
+div#CS{
+	position: absolute;
+	top: 175px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+img#CS_Table{
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	height: 220px;
+}
+div#Year3{
+	width: 40px;
+	cursor: pointer;
+}
+h4#Year3_text{
+	position: absolute;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	width: 40px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: transparent;
+	color: white;
+}
+p#Year3_bg{
+	width: 40px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: #eddf0c;
+	color: #eddf0c;
+}
+h4#Year3_text_click{
+	display: none;
+	position: absolute;
+	top: 0;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	width: 160px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: #02a5dc;
+	color: white;
+}
+div#Year4{
+	position: absolute;
+	top: 58px;
+	left: 5px;
+	width: 40px;
+	cursor: pointer;
+}
+h4#Year4_text{
+	position: absolute;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	width: 40px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: transparent;
+	color: white;
+}
+p#Year4_bg{
+	width: 40px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: #f1e748;
+	color: #f1e748;
+}
+ul#Year4_text_click{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: none;
+	position: absolute;
+	top: 0;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	width: 160px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: #41bbe4;
+	color: white;
+}
+ul#Year4_text_click li{
+	display: inline;
+}
+ul#Year4_text_click li:hover{
+	color: black;
+	text-decoration: underline;
+}
+div#Year5{
+	position: absolute;
+	top: 116px;
+	left: 10px;
+	width: 40px;
+	cursor: pointer;
+}
+h4#Year5_text{
+	position: absolute;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	width: 40px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: transparent;
+	color: white;
+}
+p#Year5_bg{
+	width: 40px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: #f6ef85;
+	color: #f6ef85;
+}
+h4#Year5_text_click{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: none;
+	position: absolute;
+	top: 0;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	width: 160px; 
+	height: 55px;
+	border-top-right-radius: 15px; 
+	border-bottom-right-radius: 15px;
+	background-color: #80d2ed;
+	color: white;
+}
+div#Pics{opacity: 1;}
+img#man{
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 125%;
+	left: 50%;
+	height: 60%;
+}
+img#Man_Obj{
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 118%;
+	left: 50%;
+	height: 12%;
+	animation-name: ManObj;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes ManObj{
+	0% {}
+	50% {transform: scale(1.1, 1.1);}
+	100% {}
+	
+}
+img#woman{
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 130%;
+	left: 70%;
+	height: 55%;
+}
+img#Woman_Obj1{
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 120%;
+	left: 78%;
+	height: 12%;
+	animation-name: WomanObj1;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+}
+@keyframes WomanObj1{
+	0% {}
+	50% {transform: rotate(360deg);}
+	100% {}
+	
+}
+img#Woman_Obj2{
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 120%;
+	left: 84%;
+	height: 8%;
+	animation-name: WomanObj2;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+}
+@keyframes WomanObj2{
+	0% {}
+	50% {transform: rotate(-360deg);}
+	100% {}
+	
+}

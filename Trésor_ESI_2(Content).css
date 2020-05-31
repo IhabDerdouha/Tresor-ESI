@@ -1,0 +1,265 @@
+div.YearContent{
+	display: none;
+	position: absolute;
+	top: 115%;
+	left: 45%;
+	width: 45%;
+	cursor: pointer;
+}
+table.YearMenu{
+	position: absolute;
+	border: 5px solid #eddf0c;
+	border-radius: 100px;
+	background-color: #eddf0c;
+	width: 100%;	
+}
+tr{
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	width: 40px; 
+	height: 55px;
+	background-color: transparent;
+	color: black;
+}
+td{
+	background-color: white;
+	border-right: 5px solid #eddf0c;
+	border-left: 5px solid #eddf0c;
+	cursor: pointer;
+}
+td:first-child{
+	border: none;
+	border-right: 2.5px solid #eddf0c;
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;
+}
+td:last-child{
+	border: none;
+	border-left: 2.5px solid #eddf0c;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+td.Modules_Optionnels a{
+	text-decoration: none;
+}
+td.Modules_Optionnels a:visited{
+	color: inherit;
+}
+td.Modules_Optionnels a:active{
+	color: inherit;
+}
+img.triangle1{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 100px;
+}
+img.triangle2{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 400px;
+}
+img.triangle3{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 75px;
+}
+img.triangle4{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 290px;
+}
+img.triangle5{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 480px;
+}
+img.triangle6{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 50px;
+}
+img.triangle7{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 250px;
+}
+div.Content{
+	display: none;
+	position: absolute;
+	top: 90px;
+	left: 0;
+	width: 100%;
+}
+div.Element1{
+	position: absolute;
+	width: 100%;
+}
+div.Element2{
+	position: absolute;
+	top: 50px;
+	width: 100%;
+}
+div.Element3{
+	position: absolute;
+	top: 100px;
+	width: 100%;
+}
+div.Element4{
+	position: absolute;
+	top: 150px;
+	width: 100%;
+}
+div.Element5{
+	position: absolute;
+	top: 200px;
+	width: 100%;
+}
+div.Element6{
+	position: absolute;
+	top: 250px;
+	width: 100%;
+}
+div.Element7{
+	position: absolute;
+	top: 300px;
+	width: 100%;
+}
+div.Element8{
+	position: absolute;
+	top: 350px;
+	width: 100%;
+}
+div.Element9{
+	position: absolute;
+	top: 400px;
+	width: 100%;
+}
+p.ElementName{
+	position: absolute;
+	z-index: 1;
+	width: 98%;
+	height: 35px;
+	font-family: Agency FB;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20pt;
+	letter-spacing: 0;
+	text-align: center;
+	background-color: #02a5dc;
+	color: white;
+	border: 5px solid #02a5dc;
+	border-radius: 50px;
+}
+p.ElementName:hover{
+	font-weight: bold; 
+	letter-spacing: 2.5px;
+}
+ul.ElementMenu{
+	position: absolute;
+	left: 23%;
+	margin: 0;
+	padding: 0;
+	width: 68%;
+	height: 35px;
+	list-style-type: none;
+	background-color: transparent;
+	border: 5px solid #02a5dc;
+	border-left: 50px solid #02a5dc;;
+	border-radius: 50px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+li.ElementChoice{
+	font-family: Agency FB;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20pt;
+	letter-spacing: 0;
+	color: black;
+	float: left;
+	margin: 20px;
+	margin-top: 2px;
+	margin-right: 10px;
+}
+li.ElementChoice:hover{
+	color: #eddf0c;
+}
+table#Year5Content{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 130px;
+	left: 33%;
+	width: 25%;
+	height: 100px;
+}
+td#Master{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	margin: 0;
+	padding: 0;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	background-color: #02a5dc;
+	color: white;
+	border-radius: 30px;
+	border: 10px solid #02a5dc;
+}
+td#Doctorat{
+	display: block;
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	height: 110%;
+	margin: 0;
+	padding: 0;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35pt;
+	letter-spacing: 0;
+	text-align: center;
+	background-color: #02a5dc;
+	color: white;
+	border-radius: 30px;
+	border: 10px solid #02a5dc;
+}
+td#Master:hover, td#Doctorat:hover{
+	background-color: #41bbe4;
+	transition: background-color 0.5s;
+	border-color: transparent;
+}
+td#Master a, td#Doctorat a{
+	text-decoration: none;
+}
+td#Master a:visited, td#Master a:active, td#Doctorat a:visited, td#Doctorat a:active{
+	color: inherit;
+}
+.Year5Appear{
+	animation-name: Rotation;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+@keyframes Rotation{
+	from {transform: rotateX(90deg);}
+	to {transform: rotateX(0deg);}
+
+}

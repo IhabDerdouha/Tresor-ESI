@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title id="title">Trésor ESI</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initail-scale=1">
+  <meta name="description" content="'Trésor ESI' is a library of Courses, Exercises , Exams and several other documents for all ESI students. 'Trésor ESI' was created in October 2013 in collaboration with the Scientific Club of ESI 'CSE'.">
+  <meta name="keywords" content="ESI, Tresor, CSE, Courses">
+  <meta name="author" content="Ihab Abderrahmane DERDOUHA">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://tresor.cse.club/favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="Trésor_ESI_1.css">
+  <link rel="stylesheet" type="text/css" href="Trésor_ESI_2.css">
+  <link rel="stylesheet" type="text/css" href="Trésor_ESI_2(Content).css">
+  <link rel="stylesheet" type="text/css" href="Trésor_ESI_3.css">
+
+  <script>
+  function ContributionLink (){
+    document.getElementById("Contribution_Active").style.display = "block";
+    document.getElementById("Courses_Active").style.display = "none";
+    document.getElementById("Home_Active").style.display = "none";
+    document.getElementById("SideScroll_sBar").style = "top: 225px; transition: top 0.5s";
+    document.getElementById("title").innrHTML = "Trésor ESI | Contribution";
+  }
+  function CoursesLink (){
+    document.getElementById("Courses_Active").style.display = "block";
+    document.getElementById("Contribution_Active").style.display = "none";
+    document.getElementById("Home_Active").style.display = "none";
+    document.getElementById("SideScroll_sBar").style = "top: 110px; transition: top 0.5s";
+    document.getElementById("title").innrHTML = "Trésor ESI | Courses";
+  }
+  function HomeLink (){
+    document.getElementById("Home_Active").style.display = "block";
+    document.getElementById("Contribution_Active").style.display = "none";
+    document.getElementById("Courses_Active").style.display = "none";
+    document.getElementById("SideScroll_sBar").style = "top: 0px; transition: top 0.5s";
+    document.getElementById("title").innrHTML = "Trésor ESI | Home";
+  }
+  function NavScroll (){
+    var h = screen.height;
+
+    var h1 = h*5/100;
+    if (document.body.scrollTop > h1 || document.documentElement.scrollTop > h1) {
+      document.getElementById("navbar").style = "background-color: white; transition: background-color 0.5s;";
+    }
+    else {
+      document.getElementById("navbar").style = "background-color: transparent; transition: background-color 0.5s;";
+    }
+
+    var h2 = h*0.8; 
+    var h3 = h*1.55;
+    if (document.body.scrollTop < h2 || document.documentElement.scrollTop < h2) { 
+       HomeLink (); }
+    if ((document.body.scrollTop > h2 || document.documentElement.scrollTop > h2) && (document.body.scrollTop < h3 || document.documentElement.scrollTop > h3)) {
+       CoursesLink ();
+    }
+    if (document.body.scrollTop > h3 || document.documentElement.scrollTop > h3) { 
+       ContributionLink (); }
+  }
+
+</script>
+<script src="CP.js"></script>
+<script src="1CP.js"></script>
+<script src="2CP.js"></script>
+<script src="CS.js"></script>
+<script src="1CS.js"></script>
+<script src="2CS_SIQ.js"></script>
+<script src="2CS_SIL.js"></script>
+<script src="2CS_SIT.js"></script>
+
+</head>
+
+<body onload="HomeLink()" onscroll="NavScroll()">
+
+<!-- *********************************************************************** First Page ****************************************************************** -->
+<p id="Home" style="position: absolute; top: -50px;"></p>
+<div id="Frame1">.</div>
+
+<img id="Nature_Night" src="Nature_Night.png" alt="Nature_Night">
+<img id="Star1" src="Star.png" alt="Star1">
+<img id="Star2" src="Star.png" alt="Star2">
+<img id="Star3" src="Star.png" alt="Star3">
+<img id="Star4" src="Star.png" alt="Star4">
+
+<img id="Meteorit_Big1" src="Meteorit_Big.png" alt="Meteorit_Big1">
+<img id="Meteorit_Big2" src="Meteorit_Big.png" alt="Meteorit_Big2">
+<img id="Meteorit_Big3" src="Meteorit_Big.png" alt="Meteorit_Big3">
+<img id="Meteorit_Big4" src="Meteorit_Big.png" alt="Meteorit_Big4">
+
+<img id="Meteorit_Medium1" src="Meteorit_Medium.png" alt="Meteorit_Medium1">
+<img id="Meteorit_Medium2" src="Meteorit_Medium.png" alt="Meteorit_Medium2">
+<img id="Meteorit_Medium3" src="Meteorit_Medium.png" alt="Meteorit_Medium3">
+<img id="Meteorit_Medium4" src="Meteorit_Medium.png" alt="Meteorit_Medium4">
+<img id="Meteorit_Medium5" src="Meteorit_Medium.png" alt="Meteorit_Medium5">
+<img id="Meteorit_Medium6" src="Meteorit_Medium.png" alt="Meteorit_Medium6">
+
+<img id="Meteorit_Small1" src="Meteorit_Small.png" alt="Meteorit_Small1">
+<img id="Meteorit_Small2" src="Meteorit_Small.png" alt="Meteorit_Small2">
+<img id="Meteorit_Small3" src="Meteorit_Small.png" alt="Meteorit_Small3">
+<img id="Meteorit_Small4" src="Meteorit_Small.png" alt="Meteorit_Small4">
+<img id="Meteorit_Small5" src="Meteorit_Small.png" alt="Meteorit_Small5">
+<img id="Meteorit_Small6" src="Meteorit_Small.png" alt="Meteorit_Small6">
+<img id="Meteorit_Small7" src="Meteorit_Small.png" alt="Meteorit_Small7">
+<img id="Meteorit_Small8" src="Meteorit_Small.png" alt="Meteorit_Small8">
+<img id="Meteorit_Small9" src="Meteorit_Small.png" alt="Meteorit_Small9">
+
+<div id="SideScroll">
+  <img id="SideScroll_Bar" src="SideScroll_Bar.png" alt="SideScroll_Bar">
+  <img id="SideScroll_sBar" src="SideScroll_sBar.png" alt="SideScroll_sBar">
+</div>
+
+<div id="NavPlus">.</div>
+<div style="width: 90%; margin: auto;">  
+  <ul id="navbar">
+  	<li class="navitem"><a href="https://www.cse.club" target="_blank"><img src="CSE_Logo.png" alt="CSE_Logo"></a></li>
+  	<li class="navitem"><a href=""><h1>Trésor ESI</h1></a></li>
+    <li class="navitem"><a href="#Contribution">
+      <h2 onclick="ContributionLink()">
+        Contribution
+        <img id="Contribution_Active" class="Link_Contribution Link_Active" src="Link_Active.png">
+        <img id="Contribution_Hover" class="Link_Contribution Link_Hover" src="Link_Hover.png">
+      </h2>
+    </a> </li>
+    <li class="navitem"><a href="#Courses">
+      <h2 onclick="CoursesLink()">
+        Courses
+        <img id="Courses_Active" class="Link_Courses Link_Active" src="Link_Active.png">
+        <img id="Courses_Hover" class="Link_Courses Link_Hover" src="Link_Hover.png">
+      </h2>
+    </a></li>
+  	<li class="navitem"><a href="#Home">
+      <h2 onclick="HomeLink()">
+        Home
+        <img id="Home_Active" class="Link_Home Link_Active" src="Link_Active.png">
+        <img id="Home_Hover" class="Link_Home Link_Hover" src="Link_Hover.png">
+      </h2>
+    </a></li>  	
+  </ul>
+</div> 
+
+<div id="hometext">
+  <h3>TRESOR ESI</h3>
+  <q>Dive In The Deep End Of Knowledge</q>
+  <br><br><br><br><br>
+  <div>
+     <h4>Description:</h4>
+     <p>
+       "Trésor ESI" is a library of Courses, Exercises , Exams and several other documents for all ESI students. "Trésor ESI" was created in October 2013 in collaboration with the Scientific Club of ESI "CSE".
+     </p>
+  </div>
+</div>
+
+<!-- *********************************************************************** Second Page ***************************************************************** -->
+<p id="Courses" style="position: absolute; top: 100%;"></p>
+<div id="Frame2">.</div>
+
+<div id="YearSelect">
+  <div id="CP">
+    <img id="CP_Table" src="CP.png" alt="CP">
+    <h3 id="CyclePrep">Cycle Préparatoire</h3>
+    <div class="Year">
+      <div id="Year1" onmouseover="Year1_Over()" onmouseout="Year1_Out()" onclick="Year1_Click()">
+        <h4 id="Year1_text">1</h4>
+        <p id="Year1_bg">.</p>
+        <h4 id="Year1_text_click">1ère Année</h4>
+      </div>
+      <div id="Year2" onmouseover="Year2_Over()" onmouseout="Year2_Out()" onclick="Year2_Click()">
+        <h4 id="Year2_text">2</h4>
+        <p id="Year2_bg">.</p>
+        <h4 id="Year2_text_click">2ème Année</h4>
+      </div>
+    </div>
+  </div>  
+  <div id="CS">
+    <img id="CS_Table" src="CS.png" alt="CS">
+    <h3 id="CycleSup">Cycle Supérieure</h3>
+    <div class="Year">
+      <div id="Year3" onmouseover="Year3_Over()" onmouseout="Year3_Out()" onclick="Year3_Click()">
+        <h4 id="Year3_text">1</h4>
+        <p id="Year3_bg">.</p>
+        <h4 id="Year3_text_click">1ère Année</h4>
+      </div>
+      <div id="Year4" onmouseover="Year4_Over()" onmouseout="Year4_Out()" onclick="Year4_Click()">
+        <h4 id="Year4_text">2</h4>
+        <p id="Year4_bg">.</p>
+        <ul id="Year4_text_click">
+          <li id="SIQ" onclick="Year4Menu_SIQ()">SIQ</li>
+          <li id="SIL" onclick="Year4Menu_SIL()">SIL</li>
+          <li id="SIT" onclick="Year4Menu_SIT()">SIT</li>
+        </ul>
+      </div>
+      <div id="Year5" onmouseover="Year5_Over()" onmouseout="Year5_Out()" onclick="Year5_Click()">
+        <h4 id="Year5_text">3</h4>
+        <p id="Year5_bg">.</p>
+        <h4 id="Year5_text_click">3ème Année</h4>
+      </div>
+    </div>
+  </div>  
+</div>
+<div id="Pics">
+    <img id="man" src="Man_Pic.png" alt="Man_Pic">
+    <img id="Man_Obj" src="Man_Obj.png" alt="Man_Obj">
+    <img id="woman" src="Woman_Pic.png" alt="Woman_Pic">
+    <img id="Woman_Obj1" src="Woman_Obj.png" alt="Woman_Obj1">
+    <img id="Woman_Obj2" src="Woman_Obj.png" alt="Woman_Obj2">
+</div>
+
+<!-- 1CP -->
+<div class="YearContent">
+  <table class="YearMenu">
+    <tr>
+      <td class="S1" onclick="Year1Menu_S1()">Semestre 1<img class="triangle1" src="Triangle_Select.png" alt="Triangle_Select"></td>
+      <td class="S2" onclick="Year1Menu_S2()">Semestre 2<img class="triangle2" src="Triangle_Select.png" alt="Triangle_Select"></td>
+    </tr>
+  </table>
+  <div class="Content Content_S1">
+    <div class="Element1" onmouseover="ALG1_Over()" onmouseout="ALG1_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWaE9JeUQ2WjZuMkU" target="_blank"><p class="ElementName" id="ALG1">Algèbre 1</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWR0V3RFBoNXJNY3M" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWNEtEeEhZX0I2Y2c" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWV1JwM2hEbmc4emM" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bw1LOBl-8RbUcTIzT0V0ZWp3WHc" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element2" onmouseover="ALSDS_Over()" onmouseout="ALSDS_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWckZUek9jamNJLXM" target="_blank"><p class="ElementName" id="ALSDS">Algorithmique et Structure de Données Statiques</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWS2thd2QtODBYb3M" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWRWN4bjVVSzllNmc" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWMXdtUDM1dlJMRVU" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWZURnMkNveDJmbms" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bw1LOBl-8RbUbWF5VVd0T0s5MWs" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="ANA1_Over()" onmouseout="ANA1_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWaTFiczNMbUVESEk" target="_blank"><p class="ElementName" id="ANA1">Analyse Mathématique 1</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWN2sxbEhnQTNMaUU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWaHBfUnk3cll0bVE" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWQnZMaDBTOUxlVWc" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bw1LOBl-8RbUTkdJV2FPV0hHbjQ" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element4" onmouseover="ARCHI1_Over()" onmouseout="ARCHI1_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWYXRncHZNbGtOVjA" target="_blank"><p class="ElementName" id="ARCHI1">Architecture des Ordinateurs 1</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWX2FkR1ZNcGMtR1ks" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWMzJNVWt2eGlEdGc" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWeXhmTDRRUmM1cVk" target="_blank"><li class="ElementChoice">Exo</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWaE92eThnbEh5bmM" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bw9xVl33-B7rZHBpeGtxSUU2RHc" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element5" onmouseover="BWEB_Over()" onmouseout="BWEB_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWS2VjcG5FYmFDMU0" target="_blank"><p class="ElementName" id="BWEB">Bureautique et Web</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B1CiMcb4PsnocXkydGF2Y2g0OUU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B1CiMcb4PsnoNTF0TU1Hc0pQQ3c" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B23V1yyVHE7KfjE1UkFmYjBwQzh1NlhpYkszX1kwN2FYb1UzSUNVZjRGNkotbGpod1ZWWm8" target="_blank">
+          <li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/14-zPeeWFeipFjQU4A2fEzRZFJH0AGqOs" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bw1LOBl-8RbURl80YjJkblI3aGc" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element6" onmouseover="ELECT_Over()" onmouseout="ELECT_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWY1NzSWY3RFNpMFk" target="_blank"><p class="ElementName" id="ELECT">Electricité</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWbFFudlpWVV9IUmc" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWc2NIMEZ1TUVMUW8" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWRTZGNDZCZUk0dWs" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bw1LOBl-8RbUcE1KVk1TUmtpejg" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element7" onmouseover="SYST1_Over()" onmouseout="SYST1_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWdExZQVpCcnZXYmM" target="_blank"><p class="ElementName" id="SYST1">Introduction au Système d'Exploitation 1</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWQlJ3UG5lS2NyYVE" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/1N3VAyAC2EoKow2BFyMZJ726h_fR-u7z4" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWOUE2N3U2dWR1ZW8" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWMWx4N2tISDhlTkk" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bw1LOBl-8RbUcjNlMXBrSDNlbGc" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element8" onmouseover="TEE_Over()" onmouseout="TEE_Out()">
+      <a href="https://drive.google.com/drive/folders/1mrFaIF0ygRNEpON44_i4J3C16CR_u2sC" target="_blank"><p class="ElementName" id="TEE">Techniques d'Expression Ecrite</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/1-0TWNc2hxVrb1PSOU5OnJ7X4guv7GNhi" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/1-6fMN3UJoDHrXT_LNd3zLR7EzD0xix_W" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+  </div>
+  <div class="Content Content_S2">
+    <div class="Element1" onmouseover="ALG2_Over()" onmouseout="ALG2_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWajBDYlR1VmF5WVE" target="_blank"><p class="ElementName" id="ALG2">Algèbre 2</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWZkxudk9XRlpMRFU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWV2s3M1c2UTFJRW8" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWQmVkckNTREZmYjQ" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B01AfTHoqPyeVk5ka2FCbU1OMFU" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element2" onmouseover="ALSDD_Over()" onmouseout="ALSDD_Out()">
+      <a href="https://drive.google.com/drive/folders/0B01AfTHoqPyeTzJlN2ROVmVzMkk" target="_blank"><p class="ElementName" id="ALSDD">Algorithmique et Structure de Données Dynamiques</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B01AfTHoqPyeSXF3cHFtOUl6em8" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B01AfTHoqPyeVmVWaE1pTlRHTkE" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B01AfTHoqPyeUkVBYjJnXzJjSUU" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B01AfTHoqPyebk5BS2hSRnFaRTg" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0BysicRmAN2aGdGc3NDc3clZ2dkE" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="ANA2_Over()" onmouseout="ANA2_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWVGk0Qk1xX1JCVGs" target="_blank"><p class="ElementName" id="ANA2">Analyse Mathématique 2</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWR2VvWUtZVWJPYms" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWcmk0cTBBTUJ2eFU" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWZzdJZlp5VzR2LU0" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWQ0FtUDJZVHJReEk" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element4" onmouseover="ANG1_Over()" onmouseout="ANG1_Out()">
+      <a href="https://drive.google.com/drive/folders/0B9hGz1nV9IIbZzd1NExwMFo3czg" target="_blank"><p class="ElementName" id="ANG1">Anglais 1</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsNFdHYnZKRTM4bG8" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsVWVjRXM0SHE3UzA" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element5" onmouseover="ELECF1_Over()" onmouseout="ELECF1_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWN3NnWDd6Sm54dTA" target="_blank"><p class="ElementName" id="ELECF1">Electronique Fondamentale 1</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWa1A2OHQ3ODU1MFU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWRTliLTZDYWxRQjA" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWUzgtNThianRrd2s" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B69HliH-Ay-lN3laVzhLTVVneTQ" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+     <div class="Element6" onmouseover="MECA_Over()" onmouseout="MECA_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWOGFjUmZOeDU1S2s" target="_blank"><p class="ElementName" id="MECA">Mécanique du Point</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWMEQ1OF9OTXhHMzQ" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWQUctc3Z6dTR6NVU" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWZnRZbGlrSFcxY3M" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4MVk4Q1hZYTEyZlU" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element7" onmouseover="SYST2_Over()" onmouseout="SYST2_Out()">
+      <a href="https://drive.google.com/drive/folders/0B01AfTHoqPyeZWNXQk5WSEZpU2c" target="_blank"><p class="ElementName" id="SYST2">Introduction au Système d'Exploitation 2</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B01AfTHoqPyecXBtLVk3ODBmLXM" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B01AfTHoqPyebEpXUllMSFFRb1U" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B01AfTHoqPyeM3dkMHpuYjhqdHc" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B01AfTHoqPyeWU00NnFsNUljeUE" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4Uk9nd09DRkttRWs" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element8" onmouseover="TEO_Over()" onmouseout="TEO_Out()">
+      <a href="https://drive.google.com/drive/folders/1GxZSrgKBdVCuMYL5yNwDqBWX7gVEULrf" target="_blank"><p class="ElementName" id="TEO">Techniques d'Expression Orale</p></a>
+    </div>
+  </div>
+</div>
+
+<!-- 2CP -->
+<div class="YearContent">
+  <table class="YearMenu">
+    <tr>
+      <td class="S1" onclick="Year2Menu_S1()">Semestre 3<img class="triangle3" src="Triangle_Select.png" alt="Triangle_Select"></td>
+      <td class ="S2" onclick="Year2Menu_S2()">Semestre 4<img class="triangle4" src="Triangle_Select.png" alt="Triangle_Select"></td>
+      <td id="2CP_Autres" onclick="Year2Menu_Autres()">Autres<img class="triangle5" src="Triangle_Select.png" alt="Triangle_Select"></td>
+    </tr>
+  </table>
+  <div class="Content Content_S1">
+    <div class="Element1" onmouseover="ALG3_Over()" onmouseout="ALG3_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWaTJoNlplWnJ4Sms" target="_blank"><p class="ElementName" id="ALG3">Algèbre 3</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWVGcxRnE3OGRnXzQ" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWbk1BUGNHcU1QbzQ" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B7-7Z8Or1tv6UFZJa2wzZ0l6a2M" target="_blank"><li class="ElementChoice">Exo</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWdDMtcHdRalctdzg" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B7-7Z8Or1tv6RzlKalptdWpxdjQ" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element2" onmouseover="ANA3_Over()" onmouseout="ANA3_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWRWJWOU1iV0dFbUk" target="_blank"><p class="ElementName" id="ANA3">Analyse Mathématique 3</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWZV9DUFQ2cHREWkE" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWd2VuZ1FKQzJWQkk" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWNGF6WWdiMmdGbUk" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5aifxUpQKZuQnpNb0RnV2g0cWc" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="ANG2_Over()" onmouseout="ANG2_Out()">
+      <a href="https://drive.google.com/drive/folders/0BysicRmAN2aGeEZrbldJNEM5bW8" target="_blank"><p class="ElementName" id="ANG2">Anglais 2</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0BysicRmAN2aGT0tqYVJUZFdRVDg" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5eU6Vxc3-f7dDR3UDl3WGltazA" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element4" onmouseover="ARCHI2_Over()" onmouseout="ARCHI2_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWVnd0TWFtLXZrRm8" target="_blank"><p class="ElementName" id="ARCHI2">Architecture des Ordinateurs 2</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWblVSY1BYcnRmMDQ" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWbDAyU2tZYzc2OTA" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B69HliH-Ay-lYjdWTmJvYTNjN2c" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWQlZUbjhmZzJzZ2s" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWcVkxR2M4XzkzTWM" target="_blank"><li class="ElementChoice">Exposé</li></a>
+      </ul>
+    </div>
+    <div class="Element5" onmouseover="ECON_Over()" onmouseout="ECON_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWRDA1QldNRFJac2M" target="_blank"><p class="ElementName" id="ECON">Economie d'Entreprise</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWOGhHSDlhamkyWHM" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWOEloWndIOUlDb1E" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWTzZaN1F4bk9jUFU" target="_blank"><li class="ElementChoice">Projets</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWTkwweXFSZlhKZ1U" target="_blank"><li class="ElementChoice">Résumés</li></a>
+      </ul>
+    </div>
+    <div class="Element6" onmouseover="ELECF2_Over()" onmouseout="ELECF2_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWMW5tYnpnd2ZUWDg" target="_blank"><p class="ElementName" id="ELECF2">Electronique Fondamentale 2</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4a2J4QTN0Qy03Vlk" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWemo0c1AxMXhyd2s" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWQ096NDBfWV8yVEk" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWcGJrbVhUXzA4REU" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWWktwWjIwV05rWW8" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div>
+    <div class="Element7" onmouseover="PRST1_Over()" onmouseout="PRST1_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWX3pYcy1xUDl5REk" target="_blank"><p class="ElementName" id="PRST1">Probabilité et Statistiques 1</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWVzMzWmx6a1NDZXc" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWNUpRclFsZTRzX0U" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWaFlUZEhyNHlRZHM" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element8" onmouseover="SFSD_Over()" onmouseout="SFSD_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWNnBneFJ0d21RbDQ" target="_blank"><p class="ElementName" id="SFSD">Structure Fichiers et Structures de Données</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWNnBneFJ0d21RbDQ" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0BysicRmAN2aGYmg0M2hGXzFLbXM" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWakZ6ekJ4TnZENFk" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWLUlxYUVoZTZnSlE" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+  </div>
+  <div class="Content Content_S2">
+    <div class="Element1" onmouseover="ANA4_Over()" onmouseout="ANA4_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWVlhiN2YzQlMtRDQ" target="_blank"><p class="ElementName" id="ANA4">Analyse Mathématique 4</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWd0M0aks0bWxTNjQ" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWV2s3M1c2UTFJRW8" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWcVhjSEh3d0JtV0U" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B0YnDsq4VNdnZXJVS2YwUHZEbzQ" target="_blank"><li class="ElementChoice">Résumés</li></a>
+      </ul>
+    </div> 
+    <div class="Element2" onmouseover="ANG3_Over()" onmouseout="ANG3_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWZXpROGEyYWFnTUk" target="_blank"><p class="ElementName" id="ANG3">Anglais 3</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B5eU6Vxc3-f7bGUzcEFMM09pWk0" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8SB9Uk7FwiOeWtUdzZyeW0tdFk" target="_blank"><li class="ElementChoice">Projet</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="LOGM_Over()" onmouseout="LOGM_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWaUxxUFFIWDl5VUk" target="_blank"><p class="ElementName" id="LOGM">Logique Mathématique</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWc0lET0Z2Y0VrVFU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B0YnDsq4VNdnakNDcWVZTTRrQlE" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWVUJvYWl5LTRZOGc" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div> 
+    <div class="Element4" onmouseover="OPTOE_Over()" onmouseout="OPTOE_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWcHd2WGd3WVZYbW8" target="_blank"><p class="ElementName" id="OPTOE">Optique et Ondes Eléctromagnitiques</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWdWlVdFZXWFdybkU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWaTdUazN5WlRrVk0" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWNUtjTGhsWjlmVGM" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B69HliH-Ay-lam9xVnBzY2I0NUU" target="_blank"><li class="ElementChoice">Autres</li></a>
+      </ul>
+    </div> 
+    <div class="Element5" onmouseover="POO_Over()" onmouseout="POO_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWUVhTTDVlYTZERU0" target="_blank"><p class="ElementName" id="POO">Programmation Orientée Objet</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWc2x3QlVqSnFVOWs" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWc3gtWkFCRXlKMVk" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bw1LOBl-8RbUUUdKMFVGTlBNbEU" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWV2Q0S0pUMXljTG8" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div> 
+    <div class="Element6" onmouseover="PRJP_Over()" onmouseout="PRJP_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWUVhTTDVlYTZERU0" target="_blank"><p class="ElementName" id="PRJP">Projet-2CP</p></a> 
+    </div> 
+    <div class="Element7" onmouseover="PRST2_Over()" onmouseout="PRST2_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWNER5RjkyR0diSms" target="_blank"><p class="ElementName" id="PRST2">Probabilité et Statistiques 2</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWaDNxa0NCaVRycUU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWa29OemloWmV4a0E" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWQWtlOVlWVG1oNkk" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element8" onmouseover="SINF_Over()" onmouseout="SINF_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWNnRyUVlqVmR3eE0" target="_blank"><p class="ElementName" id="SINF">Système d'Information</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWaWlCTTJOYjdYNkE" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWZ3dmVG5qRWNhNHc" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/1xWpOs5EL-pkfMUG33l-MI3ootg1psFGz" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWNWxHUy1KYUVvV28" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWWUl4ZjRFUEc1M1E" target="_blank"><li class="ElementChoice">Résumés</li></a>
+      </ul>
+    </div>
+  </div> 
+  <div class="Content" id="Content_2CP_Autres">
+    <div class="Element1">
+      <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzYW92YkRwX2tuaW8" target="_blank"><p class="ElementName">Concours</p></a>
+    </div>
+    <div class="Element2">
+      <a href="https://drive.google.com/drive/folders/1GH1KfU-XEFwNjLT0NWmATY2rp28RL69T" target="_blank"><p class="ElementName">Résumés</p></a>
+    </div>
+    <div class="Element3">
+      <a href="https://drive.google.com/drive/folders/0B-t0McfkEWuWQWJTTFdOMmFTZXc" target="_blank"><p class="ElementName">ESI-SBA</p></a>
+    </div>
+  </div>
+</div>
+
+<!-- 1CS -->
+<div class="YearContent">
+  <table class="YearMenu">
+    <tr>
+      <td class="S1" onclick="Year3Menu_S1()">Semestre 1<img class="triangle1" src="Triangle_Select.png" alt="Triangle_Select"></td>
+      <td class="S2" onclick="Year3Menu_S2()">Semestre 2<img class="triangle2" src="Triangle_Select.png" alt="Triangle_Select"></td>
+    </tr>
+  </table>
+  <div class="Content Content_S1">
+    <div class="Element1" onmouseover="ANG4_Over()" onmouseout="ANG4_Out()">
+      <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsSmVOeWk3SGROMEE" target="_blank"><p class="ElementName" id="ANG4">Anglais 4</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsYjRDb3BLUFk5c2M" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsN2tVMjBiempiaE0" target="_blank"><li class="ElementChoice">Exo</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsbXFKb3VlNVdfNGc" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element2" onmouseover="ANUM_Over()" onmouseout="ANUM_Out()">
+      <a href="https://drive.google.com/drive/folders/0B34roYRvxvi_Mk1rRm5Mel9FaEE" target="_blank"><p class="ElementName" id="ANUM">Analyse Numérique</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B34roYRvxvi_VEc2NktsMjZUU2M" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B4jeQTpi0aPaMlRYaTNVeHB3d1E" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B34roYRvxvi_ZjI1VW1PVkQ2TjQ" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWfnVELTF5Tl8zMlgxVXdwbHN4bmxiZlBpMWQ0bjhVLXhfM0w3aG5tZUxvWGc" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="IGL_Over()" onmouseout="IGL_Out()">
+      <a href="https://drive.google.com/drive/folders/0B34roYRvxvi_TU1tUVpoWENXc1E" target="_blank"><p class="ElementName" id="IGL">Introduction au Génie Logiciel</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B34roYRvxvi_dS0zYlhPdXl4ejg" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B34roYRvxvi_SFE1dEU3bGZxMFU" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B34roYRvxvi_Y19HOXpuU2cwSjA" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWfjFQdS1IdGRtLUNLQnRNRmlxaC1kRmJMN2tFZGJFMy1hc1A3YnRic1N1NEU" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element4" onmouseover="ORGA_Over()" onmouseout="ORGA_Out()">
+      <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWSEtuSmJVUTFPUmc" target="_blank"><p class="ElementName" id="ORGA">Analyse des Organisations</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWQUtUaW1PR0tvQTA" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWfmdsOVNBTUpsM1hFY3J6eENBeE5Qemd6ZUdybVg5SS1hNG9aZ3YxQ1pnYk0" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWfnhMZHZ1NGtXM1hLQW5tTTE5YVVKNy1fcDlVcnF6OEtYUWFzNXMydXNJSlU" target="_blank"><li class="ElementChoice">Exposés</li></a>
+      </ul>
+    </div>
+    <div class="Element5" onmouseover="RES1_Over()" onmouseout="RES1_Out()">
+      <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNcHk1OGVFMUhLMkk" target="_blank"><p class="ElementName" id="RES1">Réseaux 1</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNckxNbzh0UjV5Y3c" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNUHBRbXJzWF9oZTA" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNYktmVGVLUnFjWlk" target="_blank"><li class="ElementChoice">TP et Exposés</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWfndmdVd3UGFBLWozR1ozX0ZRVmRDZTBzTlZFLWUxMzJmWHFETVRjdkN5N0k" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element6" onmouseover="RO_Over()" onmouseout="RO_Out()">
+      <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNZ2hZdDBYSmE2QmM" target="_blank"><p class="ElementName" id="RO">Recherche Opérationnelle</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNMWdSWmRlOGVqZnc" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNWlB6aDZ2RVFrUlk" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwOFQ_m_ELhBfjVkejlJWWpMOFpCbWI5Y0E5VWhaLXY3bnZpTlQwNkRjdVFWZmx4VWZCbXc" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element7" onmouseover="SYC1_Over()" onmouseout="SYC1_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4RzJiTWR1cC1GUkU" target="_blank"><p class="ElementName" id="SYC1">Systèmes d'Exploitation Centralisés 1</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4TktycEJWajdJMU0" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4dVRHVmpJdFJVVDQ" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B0MRB34pna-vSGFQTzNaNHlRaVk" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B4jeQTpi0aPaZTYycnRwa2pDZVE" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element8" onmouseover="THP_Over()" onmouseout="THP_Out()">
+      <a href="https://drive.google.com/drive/folders/0B69HliH-Ay-lNE9YRUFSMHlSQ00" target="_blank"><p class="ElementName" id="THP">Théorie des Langages de Programmation</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4aVhWQVRlaFNDVlU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWRDZDNTVxRHNIQUE" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0Bzi2TjHEHGMWfmdrRmp3QkV5R2ZSRzZOSkhRSlJ2OEFzZHdFS3N6TUpod043cHJNeFF5cXc" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNbVZVd1VrV1JUSzQ" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+  </div>
+  <div class="Content Content_S2">
+    <div class="Element1" onmouseover="SEC_Over()" onmouseout="SEC_Out()">
+      <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRN2pER1ZNc0dxeVU" target="_blank"><p class="ElementName" id="SEC">Sécurité Informatique</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRYi1XMFZNTEhrX0k" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnam1CU01kbmhMT3M" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B7VoJyuLwxGMfkxJSFpVNUFCMUYzSkY5UGFZUGt6aEg1SmU3X3ZmaGVBdy1MY2ZSaVhxdWc" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnRFdFQ0VVMkVtRjQ" target="_blank"><li class="ElementChoice">Exposé</li></a>
+      </ul>
+    </div>
+    <div class="Element2" onmouseover="ANG5_Over()" onmouseout="ANG5_Out()">
+      <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRTEtCUUNfa1NjRzA" target="_blank"><p class="ElementName" id="ANG5">Anglais 5</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsVFpKa2xSU2ZHaDA" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsNV9xdlJGUHBfUVk" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="ARCHI3_Over()" onmouseout="ARCHI3_Out()">
+      <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGReFdsNmphaHdPQ0k" target="_blank"><p class="ElementName" id="ARCHI3">Architecture des Ordinateurs 3</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRUUQwUlYxQm5obVE" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B7VoJyuLwxGMflMwUklDVmpJelhBUVpGa2o2SWJ3czdCYWstRVRMUkw2OGdXQUNBVlVyVlU" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B7VoJyuLwxGMflUtZlJkMlRYSS1GSTgtLUh3T0FEZDZkM3RqandnY18zV1AwdEFCbWtNNU0" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B7VoJyuLwxGMfi1DSWJpQ3prN0tQcjZ1ZFMyTlZuQmU1MVBGYy12YnIzaFZGSVNnZ251U2c" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element4" onmouseover="BDD_Over()" onmouseout="BDD_Out()">
+      <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRb2lfT3VLenBWQWs" target="_blank"><p class="ElementName" id="BDD">Base De Données</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRTHBvRkRCTjY3Ums" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRNVVlOHQzT01qN0k" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B7VoJyuLwxGMflhwYVdRQjdsUHdBZ2JvWVZiWmtnWWd1TFdMeEdnaXNiVFRHNm85U3l2VUU" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B7VoJyuLwxGMflBDNFM4c09hejFPMUJCYjhSWVlPcVd6M0lQYUVaZlFaVEtKQ2dVSXJna2c" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element5" onmouseover="CPRJ_Over()" onmouseout="CPRJ_Out()">
+      <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRQmNQak5yaXlPTFU" target="_blank"><p class="ElementName" id="CPRJ">Conduite de Projet</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNV05fMUdXNGRnMzg" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsYWNwazNfWTY2Ync" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKseHVpMnpMSV85MUE" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element6" onmouseover="MCSI_Over()" onmouseout="MCSI_Out()">
+      <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRWWRnZGhLYXVDRVU" target="_blank"><p class="ElementName" id="MCSI">Méthodologie de Conception des Systèmes d'Information</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRRDBPNXZ1X21TTEE" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B7VoJyuLwxGMfnk0LUhwZFJNZFFDaEpKY1RSUzU0UFdGSVhiWXlrZGlFdHNoLXA5TjV4dlE" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnWUFLNW03eWpxdGs" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element7">
+      <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRWWRnZGhLYXVDRVU" target="_blank"><p class="ElementName">Projet-1CS</p></a>
+    </div>
+     <div class="Element8" onmouseover="RES2_Over()" onmouseout="RES2_Out()">
+      <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRTDNDcFp5NjhCdlU" target="_blank"><p class="ElementName" id="RES2">Réseaux 2</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNRVlzclF0SnRBNE0" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsSi1Ta1VHeTJSbk0" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNd0h6cG5pOXc4X28" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnTDEzbFB2bTVRaEE" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B0MRB34pna-vc0VSU2lOVVVzTzg" target="_blank"><li class="ElementChoice">Projets</li></a>
+      </ul>
+    </div>
+    <div class="Element9" onmouseover="SYC2_Over()" onmouseout="SYC2_Out()">
+      <a href="https://drive.google.com/drive/folders/0B7zr4Slt2yGRa0xDVVZuazEwTDg" target="_blank"><p class="ElementName" id="SYC2">Systèmes d'Exploitation Centralisés 2</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4UGZkQ2c1NmQ3UGs" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4U2hXUlpoRUxSejQ" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B0MRB34pna-vT085eEVOSDJ5YmM" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B7VoJyuLwxGMfnhNcmlLTi1JVFNYS3BpaVMxLTA2RkxGdzQ2SzJ0TGNtT3BvcGhaZ3diZGs" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 2CS-SIQ -->
+<div class="YearContent">
+  <table class="YearMenu">
+    <tr>
+      <td class="S1" onclick="Year4Menu_SIQ_S1()">Semestre 1<img class="triangle6" src="Triangle_Select.png" alt="Triangle_Select"></td>
+      <td class="S2" onclick="Year4Menu_SIQ_S2()">Semestre 2<img class="triangle7" src="Triangle_Select.png" alt="Triangle_Select"></td>
+      <td class="Modules_Optionnels" onclick="Year4Menu_Modules_Optionnels0()">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4dWxTbjNqU1JFTVU" target="_blank">Modules++</a>
+      </td>
+    </tr>
+  </table>
+  <div class="Content Content_S1">
+    <div class="Element1" onmouseover="ANAD_SIQ_Over()" onmouseout="ANAD_SIQ_Out()">
+      <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzfmxRSUxWNjR0YXlKYmk5UnoxcVVQdkV1NGhpcE5lUjJ5NURLQWZlcmxneHM" target="_blank"><p class="ElementName" id="ANAD_SIQ">Analyse de Données</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzfnhoNk9SZHNfaDY5UF8zdWlybWh5aGp5ekRMX3QySWhoN2J3dFNvckJtOWM" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzYXQ5YVpRYWp5SWs" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzflRYYS1Wazh0cUxQcEsyVUxFckhHQjVvcTFoc2hjV1R6bVZSaVlTdGZOMVE" target="_blank"><li class="ElementChoice">Exo</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsa21CTEdGSHUzbEU" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element2" onmouseover="COMPIL_SIQ_Over()" onmouseout="COMPIL_SIQ_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4MWVaeEtZLUMxNG8" target="_blank"><p class="ElementName" id="COMPIL_SIQ">Compilation</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzfnlMUmpxQUxWdnpKWW1hTmpLTjJTRXlLNFJlTDFwMzNGTHEzVmN6ZGFqanc" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsUGNVU1VTeVhQOG8" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzMFFabDBjZXJLUWc" target="_blank"><li class="ElementChoice">Projet-TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzfm9RXzlyb3hnYjRCMEtPZ3laSXZ5Vm84Q3Nlc1d4bHd1LXM3TTBwNlJhWjA" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="FAS_Over()" onmouseout="FAS_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4T3JXSkduRnlUaGs" target="_blank"><p class="ElementName" id="FAS">File d'Attente et Simulation</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzfmlmV2NXT0ZYRlcxTmo1T24xem9KN1VRaVAtVUpiWTByS0RydFYwSTBKeGM" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsYXlTcExnaFFCNHc" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzfjNCVEdmdTl6Z1RJRWNscVNYWGVzQ05Hdi1Bd0wzNkEyYUM0Q0NlNEZzck0" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element4" onmouseover="RESA_Over()" onmouseout="RESA_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4bmtpdHJ5OVRKWVU" target="_blank"><p class="ElementName" id="RESA">Réseaux Avancés</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4c0QxQ1d2Yk83MWs" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsZW4takRmc015Qms" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4SEFxdWd2MDZtRnM" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B69HliH-Ay-lWGkyUWhwdjFORU0" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsaUJKb2VBZDk1QW8" target="_blank"><li class="ElementChoice">Projet</li></a>
+      </ul>
+    </div>
+    <div class="Element5">
+      <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsQ3hNVVdvekROM2c" target="_blank"><p class="ElementName">Stage</p></a>
+    </div>
+    <div class="Element6" onmouseover="TPGO_SIQ_Over()" onmouseout="TPGO_SIQ_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4ZUU4Q1l3TTVZaWc" target="_blank"><p class="ElementName" id="TPGO_SIQ">Théorie de la Programmation et Graphes Orientés</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsbUpsQUk4RWdVUzQ" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsUjZwY2h4LWlEejA" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsa0diVFRxVUJQZEE" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B4jeQTpi0aPaYWVoYkZRcTllbWM" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsQTh5WDB0cGFfODA" target="_blank"><li class="ElementChoice">Docs+</li></a>
+      </ul>
+    </div>
+  </div>
+  <div class="Content Content_S2">
+    <div class="Element1" onmouseover="ALOG_SIQ_Over()" onmouseout="ALOG_SIQ_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4NGJReVNleHB3TFk" target="_blank"><p class="ElementName" id="ALOG_SIQ">Architectures Logicielles</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4N3l4RFE2dl9nTEU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4LWpXYmVOR1RBQ28" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNVXpTdGZaYWpGbG8" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element2" onmouseover="BDA_SIQ_Over()" onmouseout="BDA_SIQ_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4N0hPeHVBMTFWREE" target="_blank"><p class="ElementName" id="BDA_SIQ">SGBD et Base de Données Avancées</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzMGliTXl6ZmwyUzg" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B2xM0MnmgoC9fkhHbEtHc2NyU2IyRmdQVS1pRkVFVXhrVFYzR2F3SFBwNXdWbzVyYkg5RHM" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzOEdQN0dmd1NKUlE" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4RXVMcGRpcEhFcGc" target="_blank"><li class="ElementChoice">Exposés</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="OPTM_Over()" onmouseout="OPTM_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4dTVuYjJ2UHlyU1U" target="_blank"><p class="ElementName" id="OPTM">Optimisation Combinatoire</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4N1JZeWVoT1E2Vzg" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4OVZrZjUtMURJSDA" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzakstUF9WUVdnZHc" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element4">
+      <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4aFUxNmE5MFN5VlE" target="_blank"><p class="ElementName" id="Projet2CS">Projet-2CS</p></a>
+    </div>
+    <div class="Element5" onmouseover="SSR_Over()" onmouseout="SSR_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4eEt1bzhVXzBkeTg" target="_blank"><p class="ElementName" id="SSR">Sécurité Systèmes et Réseaux</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4b0FiaC16aUp5VUU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsWEpadTZlTHp2LVU" target="_blank"><li class="ElementChoice">TP</li></a>
+      </ul>
+    </div>
+    <div class="Element6" onmouseover="SYSR_Over()" onmouseout="SYSR_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4dVhzX1ZHRDNWdDA" target="_blank"><p class="ElementName" id="SYSR">Systèmes Répartis</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4Q1BlbC1OY2xQRXM" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6kDnRIv9vK4MzhMMFFKZzNqeEk" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsd3VqX0xoSF9zXzA" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B4CW5zYPWVRzZFhSVjIwd3pUazg" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 2CS-SIL -->
+<div class="YearContent">
+  <table class="YearMenu">
+    <tr>
+      <td class="S1" onclick="Year4Menu_SIL_S1()">Semestre 1<img class="triangle6" src="Triangle_Select.png" alt="Triangle_Select"></td>
+      <td class="S2" onclick="Year4Menu_SIL_S2()">Semestre 2<img class="triangle7" src="Triangle_Select.png" alt="Triangle_Select"></td>
+      <td class="Modules_Optionnels" onclick="Year4Menu_Modules_Optionnels1()">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4dWxTbjNqU1JFTVU" target="_blank">Modules++</a>
+      </td>
+    </tr>
+  </table>
+  <div class="Content Content_S1">
+    <div class="Element1" onmouseover="ANAD_SIL_Over()" onmouseout="ANAD_SIL_Out()">
+      <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsZDdZclIyb1VaaEk" target="_blank"><p class="ElementName" id="ANAD_SIL">Analyse de Données</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKscVp3YlQ4QVhoSHM" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsYXJSX0hnT3VwRWc" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B5Ld87QWqdKsRjNTcXNMVEJkZTA" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element2" onmouseover="COMPIL_SIL_Over()" onmouseout="COMPIL_SIL_Out()">
+      <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0aHR4VURNR2tSeGM" target="_blank"><p class="ElementName" id="COMPIL_SIL">Compilation</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0eWRJcmctRkVFVEE" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0YTZTcU1DQmI3ODg" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/1tcNqsaG1ghbIxZcsMjYPxBK-4q-Xb4Xg" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0LU95RXdjSlJuc2M" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="MAGIL_Over()" onmouseout="MAGIL_Out()">
+      <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0Y3c4eUw2UUVmek0" target="_blank"><p class="ElementName" id="MAGIL">Méthodes Agiles</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/11js4KAz9UfjZi8RPFA11P1rcEcpedaa-" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/1w_ywh8LxbwKHCzm7J3CiRXmYjWRVDf18" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element4" onmouseover="OUTILS_Over()" onmouseout="OUTILS_Out()">
+      <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0SWNCZ19JLVdLVzQ" target="_blank"><p class="ElementName" id="OUTILS">Outils GL</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0N2xwTlBNRzA5Qm8" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0dUl3QXlVamJ2blU" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0YkNkMHhFVUhjbkE" target="_blank"><li class="ElementChoice">Ateliers</li></a>
+      </ul>
+    </div>
+    <div class="Element5" onmouseover="PDC_Over()" onmouseout="PDC_Out()">
+      <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0dDd6QXVVU1FiSUE" target="_blank"><p class="ElementName" id="PDC">Patrons De Conception</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0cFMtZlI4X1BEVjA" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0QUlNMVU1a3ZqdGc" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0dFRaMDc5VTFQckU" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0MzlNLWc2LWJjSTA" target="_blank"><li class="ElementChoice">Projet</li></a>
+      </ul>
+    </div>
+    <div class="Element6">
+      <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0d0FQNzFRSl9mYmM" target="_blank"><p class="ElementName">Stage</p></a>
+      
+    </div>
+    <div class="Element7" onmouseover="TPGO_SIL_Over()" onmouseout="TPGO_SIL_Out()">
+      <a href="https://drive.google.com/drive/folders/10WuAeWb2QWS7IS-zSG9P2eX2_toWUDFx" target="_blank"><p class="ElementName" id="TPGO_SIL">Théorie de la Programmation et Graphes Orientés</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/1uQut9_1_xcllOaYOSUSZmn2j7b9L0_T8" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/1P2gAcRIKEpsuwSzV0aM1zMjxdKsK2qfQ" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/1GTH-0fBKMhGNyXv62VzxP6XN807EWiXc" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/1G3v255VNZMPGqumLMMBQkGPeVp_-KC67" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/1ht8RrTNvnOagDiSFZtf7nKmUpJEr70E2" target="_blank"><li class="ElementChoice">Docs+</li></a>
+      </ul>
+    </div>
+    <div class="Element8" onmouseover="WEB_Over()" onmouseout="WEB_Out()">
+      <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0MFN5SGV3cHJ1WEU" target="_blank"><p class="ElementName" id="WEB">Technologies de Developpement Web</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0TDcxZlVLdmZFNkU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0SHozQUhnNXBXUWc" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0R1dhc0RwcVp3ek0" target="_blank"><li class="ElementChoice">Mini-Projet</li></a>
+      </ul>
+    </div>
+  </div>
+  <div class="Content Content_S2">
+    <div class="Element1" onmouseover="ALOG_SIL_Over()" onmouseout="ALOG_SIL_Out()">
+      <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0WERXcTVjTHQwZGc" target="_blank"><p class="ElementName" id="ALOG_SIL">Architectures Logicielles</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0WDZJR0JxZWliYXc" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0MmxPUThrMTV4NmM" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0Q3hLWkZwaU41R00" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element2" onmouseover="BDA_SIL_Over()" onmouseout="BDA_SIL_Out()">
+      <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0RGxRMmJzZE02TlU" target="_blank"><p class="ElementName" id="BDA_SIL">SGBD et Base de Données Avancées</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0TjhOckV5UmNCNWs" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0YVpLZGhmTkxqLTA" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0VlFfSWNkVFVfb0E" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0enJGbU0zb2xJOVk" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="BDM_Over()" onmouseout="BDM_Out()">
+      <a href="https://drive.google.com/drive/folders/1OnnNk-drxqz9Gqn4dGVUhOGv5MAMwZJG" target="_blank"><p class="ElementName" id="BDM">Big Data Meaning</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/16KWziC9vqN4Q2nmj2DpI0k1HOi1oCAuz" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/1vn3ZF1vMq2Y71s7EV90EMRSCdopqEtOF" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/1WN16LwFPTbPYFshPS7V4iHlcfmqmM94O" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element4" onmouseover="ENTP_Over()" onmouseout="ENTP_Out()">
+      <a href="https://drive.google.com/drive/folders/1MgqnLs9VWy3CSkF_SxJawrQCQ8gg-wZF" target="_blank"><p class="ElementName" id="ENTP">Entreprenariat</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/1NKJ73MdWlJFphhvIlaBmGbDNMDIdnpZ9" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/1ypKvtPVcQy4JuKgjSRrlfN3uslKTf7WX" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element5" onmouseover="IHM_Over()" onmouseout="IHM_Out()">
+      <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0Vjl3VHJkbmFORnc" target="_blank"><p class="ElementName" id="IHM">Interface Homme Machine</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0aTNxNHZmekZ5Mzg" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0MnlYQzFVclNfdGM" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0QUNHS2xjLUN2eTA" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0c0RoaHpzMU1iWlU" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element6" onmouseover="MBL1_Over()" onmouseout="MBL1_Out()">
+      <a href="https://drive.google.com/drive/folders/1P9-2tlAbkpn2AYlfjHAbkh17VWn04xq-" target="_blank"><p class="ElementName" id="MBL1">Mobile 1</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/1rD5YWf9inoNDvOUamkgELYXHYAKHJ3MD" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/1UT3uZVePFcaShOhUjLip_jxh1L59vs32" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/1rPaBcgmEZkOInv720Z4jNJd5JtXYTqNi" target="_blank"><li class="ElementChoice">Projet</li></a>
+      </ul>
+    </div>
+    <div class="Element7" onmouseover="MBL2_Over()" onmouseout="MBL2_Out()">
+      <a href="https://drive.google.com/drive/folders/1GfyxVz6ObsCJ3hKIJZsvvPyF3aCjckyp" target="_blank"><p class="ElementName" id="MBL2">Mobile 2</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/12HTIVItiQGW2jHJndELZzy4tbR7orhrU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/13-8CLWcvTQ9qO8Fzww8DjwfaSbXB78YY" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/1EGKxKNmt57Kz4e0ThEMU76qrnBc6Hp_S" target="_blank"><li class="ElementChoice">Projet</li></a>
+      </ul>
+    </div>
+    <div class="Element8" onmouseover="MNG_Over()" onmouseout="MNG_Out()">
+      <a href="https://drive.google.com/drive/folders/1hG5kExrC9vGvPSiUZEucqhJPjXplTKbb" target="_blank"><p class="ElementName" id="MNG">Management</p></a>
+    </div>
+    <div class="Element9" onmouseover="QLOG_Over()" onmouseout="QLOG_Out()">
+      <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0b29oM0NueXlMa0k" target="_blank"><p class="ElementName" id="QLOG">Qualité Logicielle</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0TVFyTWpXcGRmYkU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0RDdpcjQyZlNvUWM" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0BwtFazHmunG0aTVTREx5UmVydE0" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 2CS-SIT -->
+<div class="YearContent">
+  <table class="YearMenu">
+    <tr>
+      <td class="S1" onclick="Year4Menu_SIT_S1()">Semestre 1<img class="triangle6" src="Triangle_Select.png" alt="Triangle_Select"></td>
+      <td class="S2" onclick="Year4Menu_SIT_S2()">Semestre 2<img class="triangle7" src="Triangle_Select.png" alt="Triangle_Select"></td>
+      <td class="Modules_Optionnels" onclick="Year4Menu_Modules_Optionnels2()">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4dWxTbjNqU1JFTVU" target="_blank">Modules++</a>
+      </td>
+    </tr>
+  </table>
+  <div class="Content Content_S1">
+    <div class="Element1" onmouseover="ANAD_SIT_Over()" onmouseout="ANAD_SIT_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4TUtyNHRyTnJLX1U" target="_blank"><p class="ElementName" id="ANAD_SIT">Analyse de Données</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnM0hvUWJqRHJVbzA" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvneC00enl0WDBBcVE" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvncjM1R2lqZ1VkM1E" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element2" onmouseover="AQUA_Over()" onmouseout="AQUA_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4ak15N3FDTjZxNDg" target="_blank"><p class="ElementName" id="AQUA">Assurance Qualité</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4Rkl5N2J1RzlhU00" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B1_Vi8elzNcdM2ZSMk01VnBDT1U" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4YXYwR3pEN3FNSWc" target="_blank"><li class="ElementChoice">Résumé</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="ASI_Over()" onmouseout="ASI_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4SVJxVU9qMzFybzA" target="_blank"><p class="ElementName" id="ASI">Analyse des Systèmes d'Information</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnZmtZRWlaY1phMjA" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnTEw5SE1BM1JNQ1k" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvncWtLcXEyNERrRFU" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/17473x4a79CWkAOGGUT7z6jKu1_BCyhX8" target="_blank"><li class="ElementChoice">Books</li></a>
+      </ul>
+    </div>
+    <div class="Element4" onmouseover="BDA_SIT_Over()" onmouseout="BDA_SIT_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4a1hRQmFzLW1CX3c" target="_blank"><p class="ElementName" id="BDA_SIT">SGBD et Base de Données Avancées</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4RnpkWVF1endSS2c" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4QU9MNS1JaFl3TDg" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvncWZPNmtUNUxQdWs" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4Z2VKaUVNTWhOQ1U" target="_blank"><li class="ElementChoice">Résumé</li></a>
+      </ul>
+    </div>
+    <div class="Element5" onmouseover="MPSI_Over()" onmouseout="MPSI_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4UGRrSXFZNEJlWmc" target="_blank"><p class="ElementName" id="MPSI">Conduite de Changement</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4SXhQaVA1SHF4OGs" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4SjI0bDRjYmEyRVk" target="_blank"><li class="ElementChoice">TD</li></a>
+      </ul>
+    </div>
+    <div class="Element6" onmouseover="SIAD_Over()" onmouseout="SIAD_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4cTZ5VkZWekF3RGs" target="_blank"><p class="ElementName" id="SIAD">Système d'Aide à la Décision</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4WXVVYlN0eEhBclk" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4NHdkU2otYktiSzA" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvndU1SekFvbEVmclU" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnMlA0YlZyUW5yekU" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element7" onmouseover="TICO_Over()" onmouseout="TICO_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4c2F4RExUSWpmRjQ" target="_blank"><p class="ElementName" id="TICO">TIC en Organisation</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4VV9ISW90bjBDbWc" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnT3p2bHJIYkQyejg" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnY0hWS0xNdFNzTTA" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4QlJfakRWcDNxNkE" target="_blank"><li class="ElementChoice">Mini-Projet</li></a>
+      </ul>
+    </div>
+  </div>
+  <div class="Content Content_S2">
+    <div class="Element1" onmouseover="AL_Over()" onmouseout="AL_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4allSTWk3RVkzaDQ" target="_blank"><p class="ElementName" id="AL">Architecture Logicielle</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4Qjg1V3NfUXg1bk0" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4b296eFh5aGNpN28" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnZWxWU2VRSlp1ek0" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element2" onmouseover="COFI_Over()" onmouseout="COFI_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4ZldCQ2doTmFQYnM" target="_blank"><p class="ElementName" id="COFI">Compatibilité & Finance</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4Q1dieWZrYjM4bTA" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4T2t1RWZQLS13bDQ" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B3nPKhaZBGvNZ0JDNWlqWVVEak0" target="_blank"><li class="ElementChoice">Examens</li></a>
+        <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4Y05CVGwtMndyWHc" target="_blank"><li class="ElementChoice">Exposé</li></a>
+      </ul>
+    </div>
+    <div class="Element3" onmouseover="ERP_Over()" onmouseout="ERP_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4N0lzckg1OUZuNlE" target="_blank"><p class="ElementName" id="ERP">Entreprise Ressource planning</p></a>
+    </div>
+    <div class="Element4" onmouseover="FASI_Over()" onmouseout="FASI_Out()">
+      <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnbVNteG16czdEQW8" target="_blank"><p class="ElementName" id="FASI">File d'Attente et Simulation</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnVGNDcUxGem82Mm8" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnZ21UTHJNcHhJMDQ" target="_blank"><li class="ElementChoice">TD</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnaVRQNVNmNTRLbm8" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+    <div class="Element5">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4VUJLa0MxY2hDeUE" target="_blank"><p class="ElementName">Projet-2CS</p></a>
+    </div>
+    <div class="Element6">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4eGN6XzNUMUVBSlE" target="_blank"><p class="ElementName">Projet-Sécurité Système d'Information</p></a>
+    </div>
+    <div class="Element7" onmouseover="SIC_Over()" onmouseout="SIC_Out()">
+      <a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4OHU2cnhVQUtNWVE" target="_blank"><p class="ElementName" id="SIC">Systèmes d'Information Coopératifs</p></a>
+      <ul class="ElementMenu">
+        <a href="https://drive.google.com/drive/folders/0B1_Vi8elzNcdQjVxc0pjdDNCOUU" target="_blank"><li class="ElementChoice">Cours</li></a>
+        <a href="https://drive.google.com/drive/folders/0B1_Vi8elzNcdTGU0QjlIWUtINkU" target="_blank"><li class="ElementChoice">TP</li></a>
+        <a href="https://drive.google.com/drive/folders/0B8k27wFtVXvnZXlhbWU5VlF4VU0" target="_blank"><li class="ElementChoice">Examens</li></a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 3CS -->
+<div class="YearContent">
+  <table id="Year5Content">
+    <td id="Master"><a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4UmZQc1gzZFZWdk0" target="_blank">Master</a></td>
+    <td id="Doctorat"><a href="https://drive.google.com/drive/folders/0B6ANTtDVbRt4UmZQc1gzZFZWdk0" target="_blank">Concours Doctorat</a></td>
+  </table>
+</div>
+
+<!-- *********************************************************************** Third Page ***************************************************************** -->
+<p id="Contribution" style="position: absolute; top: 208%;"></p>
+<div id="Frame3">.</div>
+
+<div id="Contribution_Content">
+  <h5 id="Contribution_Title">Contribution</h3>
+  <br>
+  <p id="Contribution_Paragraph1">“Trésor ESI” vous offre l’opportunité de rejouter de nouveaux documents afin d’enrichir cette bibliothèque.</p>
+  <p id="Contribution_Paragraph2">Si vous en êtes intéressés, n’ésitez pas à remplir ce</p>
+  <p id="Contribution_Formulaire">
+    <a href="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfDcpyG7hsMw-DsyowZhlfbhxgeyeAZzSvrYBfYpoWLSfpzjg/viewform?usp=sf_link" target="_blank">
+      Formulaire
+    </a>
+  </p>
+</div>
+<img id="PC_User" src="PC_User.png" alt="PC_User">
+<img id="Footer_Pic" src="Footer_Pic.png" alt="Footer_Pic">
+<p id="Footer_Text">Copyright © Club Scientifique de l'ESI 2020</p>
+
+</body>
+</html>

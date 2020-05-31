@@ -1,0 +1,93 @@
+div#Contribution_Content{
+	position: absolute;
+	top: 230%;
+	left: 10%;
+}
+h5#Contribution_Title{
+	width: 24.5%;
+	margin: 0;
+	padding: 0;	
+	font-family: Agency FB;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40pt;
+	letter-spacing: 5px;
+	color: #02a5dc;
+	border-bottom: 3px solid #02a5dc;  
+}
+p#Contribution_Paragraph1{
+	display: block; 
+	width: 70%;
+	margin: 0;
+	padding: 0;	
+	font-family: Agency FB;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22pt;
+	letter-spacing: 0;
+	color: black;
+}
+p#Contribution_Paragraph2{
+	display: inline-block; 
+	margin: 0;
+	padding: 0;	
+	font-family: Agency FB;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22pt;
+	letter-spacing: 0;
+	color: black;
+}
+p#Contribution_Formulaire{
+	display: inline-block; 
+	width: 15%;
+	margin: 0;
+	padding: 0;	
+	margin-left: 1%; 
+	text-align: center;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28pt;
+	letter-spacing: 0;
+	color: white;
+	background-color: #eddf0c;
+	border-radius: 20px;
+}
+p#Contribution_Formulaire:hover{
+	background-color: #41bbe4;
+	transition: background-color 0.5s;
+	border-color: transparent;
+}
+p#Contribution_Formulaire a, p#Contribution_Formulaire a:visited, p#Contribution_Formulaire a:active{
+	color: inherit;
+	text-decoration: none;
+}
+img#PC_User{
+	display: block;
+	position: absolute;
+	top: 235%;
+	left: 65%;
+	width: 30%;
+}
+img#Footer_Pic{
+	display: block;
+	position: absolute;
+	bottom: -205.6%;
+	left: 30%;
+	width: 40%;
+}
+p#Footer_Text{ 
+	position: absolute;
+	bottom: -203%;
+	left: 34%;
+	margin: 0;
+	padding: 0;	
+	text-align: center;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 27pt;
+	letter-spacing: 0;
+	color: white;
+}

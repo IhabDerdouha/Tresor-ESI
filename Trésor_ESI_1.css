@@ -1,0 +1,510 @@
+body{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+div#Frame1{
+	position: absolute;
+	z-index: -20;
+	top: 1%;
+	left: 0.5%;
+	width: 99%;
+	height: 98%;
+	color: white;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 #131e30, 0 6px 20px 0 #131e30;
+}
+div#Frame2{
+	position: absolute;
+	z-index: -20;
+	top: 103.5%;
+	left: 0.5%;
+	width: 99%;
+	height: 98%;
+	color: white;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 #131e30, 0 6px 20px 0 #131e30;
+}
+div#Frame3{
+	position: absolute;
+	z-index: -20;
+	top: 207.8%;
+	left: 0.5%;
+	width: 99%;
+	height: 98%;
+	color: white;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 #131e30, 0 6px 20px 0 #131e30;
+}
+#Nature_Night{
+	display: block;
+	position: absolute;
+	z-index: -1;
+	margin: 0;
+	padding: 0;
+	top: 1%;
+	right: 0.5%;
+	width: 55%;
+	height: 98%;
+
+}
+#Star1{
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 32.5%;
+	right: 3%;
+	height: 6%;
+	width: auto;
+	animation-name: Blink;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	opacity: 0.5;
+}
+#Star2{
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 35%;
+	right: 28%;
+	height: 7%;
+	width: auto;
+	animation-name: Blink;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	opacity: 0.5;
+}
+#Star3{
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 42%;
+	right: 15%;
+	height: 7%;
+	width: auto;
+	animation-name: Blink;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	opacity: 0.5;
+}
+#Star4{
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 45%;
+	right: 35%;
+	height: 7%;
+	width: auto;
+	animation-name: Blink;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 2.5s;
+	opacity: 0.5;
+}
+@keyframes Blink{
+	0% {opacity: 0.5;}
+	50% {opacity: 0.1;}
+	100% {opacity: 0.5;}
+}
+#Meteorit_Big1{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 10%;
+	left: 10%;
+	animation-name: Meteorit_Big;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+#Meteorit_Big2{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 30%;
+	left: 10%;
+	animation-name: Meteorit_Big;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-delay: 2.5s;
+	opacity: 0;
+}
+#Meteorit_Big3{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 10%;
+	left: 30%;
+	animation-name: Meteorit_Big;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 5s;
+	opacity: 0;
+}
+#Meteorit_Big4{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 5%;
+	left: 50%;
+	animation-name: Meteorit_Big;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 3s;
+	opacity: 0;
+	width: 0;
+}
+#Meteorit_Medium1{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 5%;
+	left: 20%;
+	animation-name: Meteorit_Medium;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+#Meteorit_Medium2{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 20%;
+	left: 10%;
+	animation-name: Meteorit_Medium;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	opacity: 0; 
+}
+#Meteorit_Medium3{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 40%;
+	left: 10%;
+	animation-name: Meteorit_Medium2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	opacity: 0; 
+}
+#Meteorit_Medium4{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 45%;
+	left: 5%;
+	animation-name: Meteorit_Medium2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 1.5s;
+	opacity: 0; 
+}
+#Meteorit_Medium5{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 5%;
+	left: 40%;
+	animation-name: Meteorit_Medium;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+}
+#Meteorit_Medium6{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 5%;
+	left: 55%;
+	animation-name: Meteorit_Medium2;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	opacity: 0; 
+	width: 0;
+}
+#Meteorit_Small1{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 10%;
+	left: 20%;
+	animation-name: Meteorit_Small;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+#Meteorit_Small2{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 15%;
+	left: 15%;
+	animation-name: Meteorit_Small;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-delay: 5s;
+	opacity: 0;
+	width: 0;
+}
+#Meteorit_Small3{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 30%;
+	left: 15%;
+	animation-name: Meteorit_Small;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 3s;
+	opacity: 0;
+	width: 0;
+}
+#Meteorit_Small4{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 50%;
+	left: 15%;
+	animation-name: Meteorit_Small2;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+}
+#Meteorit_Small5{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 20%;
+	left: 20%;
+	animation-name: Meteorit_Small;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+#Meteorit_Small6{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 50%;
+	left: 5%;
+	animation-name: Meteorit_Small2;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+#Meteorit_Small7{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 70%;
+	left: 2.5%;
+	animation-name: Meteorit_Small2;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-delay: 3s;
+	opacity: 0;
+	width: 0;
+}
+#Meteorit_Small8{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 5%;
+	left: 60%;
+	animation-name: Meteorit_Small2;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+#Meteorit_Small9{
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: 5%;
+	left: 40%;
+	animation-name: Meteorit_Small2;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes Meteorit_Big{
+	0% {opacity: 0.25; width: 5%;}
+	50% {opacity: 0.5;}
+	100% {opacity: 0; width: 40%;}
+}
+@keyframes Meteorit_Medium{
+	0% {opacity: 0.25; width: 5%;}
+	50% {opacity: 0.5;}
+	100% {opacity: 0; width: 60%;}
+}
+@keyframes Meteorit_Medium2{
+	0% {opacity: 0.25; width: 5%;}
+	50% {opacity: 0.5;}
+	100% {opacity: 0; width: 45%;}
+}
+@keyframes Meteorit_Small{
+	0% {opacity: 0.25; width: 5%;}
+	50% {opacity: 0.5;}
+	100% {opacity: 0; width: 80%;}
+}
+@keyframes Meteorit_Small2{
+	0% {opacity: 0.25; width: 5%;}
+	50% {opacity: 0.5;}
+	100% {opacity: 0; width: 35%;}
+}
+#SideScroll{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	top: 27%;
+	left: 3%;
+	width: 6.5%;
+}
+#SideScroll_Bar{
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 6.5%;
+	
+}
+#SideScroll_sBar{
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 6%;
+	
+}
+div#NavPlus{
+	position: fixed;
+	z-index: 10;
+	top: 1%;
+	left: 0.5%;
+	width: 4.5%;
+	height: 65px;
+	color: white;
+	background-color: white;
+}
+#navbar{	
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	position: fixed;
+	z-index: 10;
+	top: 1%;
+	width: 94.5%;
+	height: 65px;
+}
+.navitem{
+	display: inline;
+}
+li a img{
+	float: left;
+	margin: 6px;
+	padding: 0;
+	width: 55px;
+}
+h1{
+	float: left;
+	margin: 12px;
+	padding: 0;
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30pt;
+	letter-spacing: 2.5px;
+	color: black;
+}
+h2{
+	display: block;
+	float: right;
+	margin: 15px;
+	padding: 0;
+	font-family: Agency FB;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22.5pt;
+	letter-spacing: 2px;
+	color: black;
+}
+.Link_Home{
+	display: none;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 60px;
+	height: 3px;
+}
+.Link_Courses{
+	display: none;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 90px;
+	height: 3px;
+}
+.Link_Contribution{
+	display: none;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 140px;
+	height: 3px;
+}
+h2:hover .Link_Hover{
+	display: block;
+}
+h2:hover .Link_Active{
+	display: none;
+}
+div#hometext{
+	position: absolute;
+	top: 22.5%;
+	left: 10%;
+	margin: 0;
+	padding: 0;	
+}
+div h3{
+	margin: 0;
+	padding: 0;	
+	font-family: Agency FB;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 75pt;
+	letter-spacing: 15px;
+	color: #02a5dc;
+}
+div q{
+	margin: 0;
+	padding: 0;	
+	font-family: League Gothic;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30pt;
+	letter-spacing: 2.5px;
+	color: #eddf0c;
+}
+div div{
+	width: 400px;
+}
+div div h4{
+	margin: 0;
+	padding: 0;	
+	font-family: Agency FB;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20pt;
+	letter-spacing: 0px;
+	color: black;
+}
+div div p{
+	margin: 0;
+	padding: 0;	
+	font-family: Agency FB;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15pt;
+	letter-spacing: 0px;
+	color: black;
+}
